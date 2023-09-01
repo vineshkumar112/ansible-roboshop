@@ -16,13 +16,3 @@
      name: mongod
      state: started
      enabled: yes
-    
-    
-
-
-
-
-ansible.builtin.service:
-      name: mongod
-      state: started
-      enabled: yes
