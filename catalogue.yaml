@@ -2,10 +2,11 @@
 - name: Install catalogue component
   hosts: mongodb
   become: yes
-  task:
-    - name: setup NPM source
-      ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
-    - name: install nodjs
+  taskss:
+  - name: setup NPM source
+    ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
+  
+  - name: install nodjs
       ansible.builtin.yum:
         name: nodejs
         state: installed
