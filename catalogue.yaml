@@ -1,5 +1,5 @@
 - name: Install catalogue component
-  hosts: mongodb
+  hosts: catalogue
   become: yes
   taskss:
   - name: setup NPM source
